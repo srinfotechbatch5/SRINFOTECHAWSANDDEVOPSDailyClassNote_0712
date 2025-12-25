@@ -208,8 +208,11 @@ after made the some changes
 >git status
 
 >git add --all
+
 >git status
+
 >git commit -m "commit message"
+
 >git push   ----> changes pushed from local machine to remote
 
 
