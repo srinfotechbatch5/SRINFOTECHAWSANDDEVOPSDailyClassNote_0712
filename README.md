@@ -1202,3 +1202,157 @@ Installed the default suggested plugins
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/8a80769d-672b-42c4-ad59-bdb5a288abc7" />
 
+
+
+
+02/01/2026::
+===========
+
+
+Steps::
+
+https://www.jenkins.io/download/
+
+1. First download the jenkins.war file and right click -->open gitbash here
+   
+
+ ![image](https://github.com/user-attachments/assets/77ca0550-974b-463f-953a-d81c9603d69a)
+
+  
+2. run the command  -->java -jar jenkins.war --httpPort=9090
+
+![image](https://github.com/user-attachments/assets/93cc2393-8a20-485f-ab8c-23451a64ccd3)
+
+![image](https://github.com/user-attachments/assets/75e03c2f-0ccf-4da0-90cf-d92de22903c3)
+
+we can see Jenkins is fully up and running
+
+![image](https://github.com/user-attachments/assets/b0e26f12-f202-4e69-8672-223e6947d379)
+
+
+Browse to http://localhost:9090 and wait until the Unlock Jenkins page appears
+
+Installed the default suggested plugins
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/8a80769d-672b-42c4-ad59-bdb5a288abc7" />
+
+
+click on continue 
+
+Need to create jenkins user profile 
+
+USER Name--->admin (any name you can provide)
+
+PASSWORD  -->admin  (any password as your wish but make sure you should remembered the these credentials)
+
+![image](https://github.com/user-attachments/assets/f0458a88-da81-4d32-9f87-42458fd214a1)
+
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/e11ae91e-ec78-42e1-b64d-19696755931a" />
+
+
+
+Create sample Freestyle project::
+============================
+
+Github Project URL:::
+=====================
+
+https://github.com/srinfotechbatch5/spring-petclinic
+
+https://github.com/srinfotechbatch5/java-hello-world-with-maven
+
+Click New Item
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8a51a17-f3f8-4719-95f0-551ad8e2fb4f" />
+
+Enter an item name     ---->This Should be Name of your Project
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/adebc306-828a-4920-bb47-63d8fe060c67" />
+
+
+Click OK
+
+
+Configuration stages::
+
+1.General
+
+2.Source code management (SCM)
+
+3.Triggres
+
+4.Environment
+
+5.Build Steps
+
+6.Post Build Actions
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/515589a7-463e-4209-94e5-cf6c2ce6caab" />
+
+
+
+General Section provide the Project/job description 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a92f0756-1444-490e-a60b-d3c48bc4be84" />
+
+
+At SCM stage level select the Git and provide the github details
+
+
+https://github.com/srinfotechbatch3/spring-petclinic
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6f736b3a-6179-4a86-a56b-08d76c22ffdd" />
+
+
+Branches to build
+
+main branch and this branch should match with github repository branch
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8d4094c2-e384-4a08-b699-1e4fc4625656" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b392b9e0-631c-404d-bcd7-3e26c096fb16" />
+
+
+Build steps::select the Invoke top-level Maven targets
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/659cddb4-e8fd-44b8-a6c6-1e77a62eaf1b" />
+
+
+Goals section
+>mvn clean install
+
+Maven goals::
+
+>mvn test
+
+>mvn install
+
+
+>mvn clean install
+
+
+>mvn clean
+
+
+>mvn package
+
+>mvn compile
+
+![image](https://github.com/user-attachments/assets/53d49170-9dfe-4cad-abc0-50bf268e96c7)
+
+
+Job will be created
+
+Click Build Now
+
+
+Buils is Inprogress
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3444e4a2-865d-41ce-be9e-aa8e8da44d67" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d877e99a-1e20-4ddc-b061-81a585b67ea5" />
+
