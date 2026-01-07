@@ -1356,3 +1356,312 @@ Buils is Inprogress
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d877e99a-1e20-4ddc-b061-81a585b67ea5" />
 
+
+
+06/01/2026::
+=============
+
+
+Please try to create the New Job in Jenkins for Onlinebookstore Project and do the Build::
+=========================================================================================
+
+
+Click New Item
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8a51a17-f3f8-4719-95f0-551ad8e2fb4f" />
+
+
+steps::
+
+Configuration stages::
+
+1.General
+
+2.Source code management (SCM)
+
+3.Triggres
+
+4.Environment
+
+5.Build Steps
+
+6.Post Build Actions
+
+
+Enter Description
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f567edc3-95b2-4719-b331-8e7d5663dd0d" />
+
+
+Provide the Repository URL
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a48dc090-ed74-4765-814e-edb68d495ec5" />
+
+Provide the Specific Branch
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8cf5ff7b-0286-40a9-8c91-eb05cd6f2f1a" />
+
+
+Build Steps----> select Invoke top-level Maven targets
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c6c30305-7713-4180-b717-00bb1b76527c" />
+
+
+Click Save
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91fdc2ce-42c2-437a-aafb-8f881133b9bc" />
+
+
+Click Build Now
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3403704e-5790-427a-aac4-0d0c2df86a20" />
+
+
+Build is Inprogress
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1c59da0f-85f4-4265-8979-a50536fc23af" />
+
+
+
+Poll SCM ::
+=================
+
+Jenkins server ask git if there is any changes in git server or not, if changes there Jenkins server build/package the changes , every change build happened like 5 mints ,means every 5 minutes verify the Jenkins server to git if there is any changes 
+
+
+<img width="1118" height="641" alt="image" src="https://github.com/user-attachments/assets/39aa389b-fecf-4ea6-aa46-7fbe42ef5b58" />
+
+
+
+POLL SCM ----* * * * * --every minute when every commit 
+
+
+
+Create one sample POLL SCM jenkins job::
+===========================================
+Go to jenkins Dashboard
+
+click New Item
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8a51a17-f3f8-4719-95f0-551ad8e2fb4f" />
+
+
+Description
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/759be7e4-4d08-449e-a6e4-1cf4ae894d77" />
+
+
+
+Provide the Git URL
+
+https://github.com/srinfotechbatch5/spring-petclinic.git
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3fdcb434-bd51-4b75-937b-febb013e5b31" />
+
+
+
+Branch buiild
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4ba819e5-f109-4dea-8906-7ea252435297" />
+
+
+POLL SCM:: * * * * *
+
+every minute build was trigger when new commits happend in github repository
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b8228751-5212-41f6-a7a5-cdca52d94afc" />
+
+
+Crone Job URL::
+==================
+
+https://crontab.guru/examples.html
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8de3a3f9-a60e-4926-b10a-edc719724940" />
+
+
+
+Build Steps----> select Invoke top-level Maven targets
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c6c30305-7713-4180-b717-00bb1b76527c" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/460714dc-e89c-4ad1-aa73-a4a91ec74938" />
+
+Click Save
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91fdc2ce-42c2-437a-aafb-8f881133b9bc" />
+
+
+NOTE:: 
+==========
+
+Please Modified any code in project and push those changes to Github Repository , make sure should Enbaled POLL SCM then Automatic Build happend every new Commits.
+
+POLL SCM:: * * * * *
+
+every minute build was trigger when new commits happend in github repository
+
+
+
+LAB Practice::
+=============
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3
+$ git clone git@github.com:srinfotechbatch5/spring-petclinic.git
+Cloning into 'spring-petclinic'...
+remote: Enumerating objects: 10774, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 10774 (delta 5), reused 4 (delta 4), pack-reused 10767 (from 2)
+Receiving objects: 100% (10774/10774), 7.85 MiB | 527.00 KiB/s, done.
+Resolving deltas: 100% (4049/4049), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3
+$ cd spring-petclinic
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (main)
+$ git checkout feature/2025.08.12
+error: pathspec 'feature/2025.08.12' did not match any file(s) known to git
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (main)
+$ git pull
+From github.com:srinfotechbatch3/spring-petclinic
+ * [new branch]      feature/2025.08.12 -> origin/feature/2025.08.12
+Already up to date.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (main)
+$ git checkout feature/2025.08.12
+branch 'feature/2025.08.12' set up to track 'origin/feature/2025.08.12'.
+Switched to a new branch 'feature/2025.08.12'
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git status
+On branch feature/2025.08.12
+Your branch is up to date with 'origin/feature/2025.08.12'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pom.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git status
+On branch feature/2025.08.12
+Your branch is up to date with 'origin/feature/2025.08.12'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pom.xml
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git commit -m "updated pom.xml for artifacts formates"
+[feature/2025.08.12 e1bd446] updated pom.xml for artifacts formates
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:srinfotechbatch3/spring-petclinic.git
+   30aab0a..e1bd446  feature/2025.08.12 -> feature/2025.08.12
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git status
+On branch feature/2025.08.12
+Your branch is up to date with 'origin/feature/2025.08.12'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pom.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git status
+On branch feature/2025.08.12
+Your branch is up to date with 'origin/feature/2025.08.12'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pom.xml
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git commit -m "reverted the artifact formate"
+[feature/2025.08.12 ac7172d] reverted the artifact formate
+ 1 file changed, 1 deletion(-)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 295 bytes | 24.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:srinfotechbatch3/spring-petclinic.git
+   e1bd446..ac7172d  feature/2025.08.12 -> feature/2025.08.12
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git commit -m "reverted the artifact formate"
+[feature/2025.08.12 90cfd57] reverted the artifact formate
+ 1 file changed, 1 insertion(+)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Downloads/SR INFOTECH Batch3/spring-petclinic (feature/2025.08.12)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:srinfotechbatch3/spring-petclinic.git
+   ac7172d..90cfd57  feature/2025.08.12 -> feature/2025.08.12
+
+
+
+Poll SCM ::
+================
+
+Jenkins server ask git if there is any changes in git server or not, if changes there Jenkins server build/package the changes , every change build happened like 5 mints ,means every 5 minutes verify the Jenkins server to git if there is any changes 
+
+![image](https://github.com/user-attachments/assets/6f436ad6-e92a-40e3-831a-23219c288217)
+
+POLL SCM ----* * * * * --every minute when every commit 
+
+Build Periodically:::	
+============================
+
+H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+
+
+Please create a New Jenkins jobs both POLL SCM & Build Periodically 
+
+https://github.com/srinfotechbatch5/spring-petclinic.git
+
+https://github.com/srinfotechbatch5/onlinebookstore.git
