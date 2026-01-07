@@ -1361,6 +1361,22 @@ Buils is Inprogress
 06/01/2026::
 =============
 
+Common Maven Commands::
+==========================
+
+1.mvn clean         # Clean up previous builds
+
+2.mvn compile       # Compile source code
+
+3.mvn test          # Run unit tests
+
+4.mvn package       # Create a JAR/WAR
+
+5.mvn install       # Install package into local repo
+
+6.mvn clean install        # Deploy package to remote repo
+
+
 
 Please try to create the New Job in Jenkins for Onlinebookstore Project and do the Build::
 =========================================================================================
