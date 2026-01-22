@@ -8,19 +8,11 @@
 In Demo session we have Overview of the all CI/CD tools & AWS Road Map
 
 
-
-<img width="1596" height="683" alt="image" src="https://github.com/user-attachments/assets/ea941b0c-6568-4395-bceb-d73c77e8eff6" />
-
-
-
 <img width="1909" height="725" alt="image" src="https://github.com/user-attachments/assets/61ba06cc-e465-488c-8611-05da91992c12" />
 
 
 <img width="1504" height="574" alt="image" src="https://github.com/user-attachments/assets/c9549092-707d-44da-bab3-797f161a582e" />
 
-
-
-<img width="1906" height="721" alt="image" src="https://github.com/user-attachments/assets/07614ee7-18f0-4854-ab18-6528fd97daa1" />
 
 
 <img width="1622" height="697" alt="image" src="https://github.com/user-attachments/assets/01e5a341-1f67-4742-afc6-29ffad71d4c2" />
