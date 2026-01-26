@@ -430,3 +430,243 @@ To github.com:srinfotechbatch5/Demo.git
 
 HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Demo (main)
 $
+
+
+
+
+23/01/2026::
+=============
+
+
+Github branching strategy::
+===========================
+
+Github Branching Model::
+-------------------------------
+
+A GitHub branching model is a structured way of organizing branches in a Git repository to manage development workflows effectively. It helps teams work collaboratively, isolate features, manage releases, and deploy code more efficiently.
+
+
+
+<img width="1729" height="775" alt="image" src="https://github.com/user-attachments/assets/7e6620b7-7339-423c-855d-537c8fb3d6d2" />
+
+
+A GitHub branching strategy is crucial for maintaining an organized workflow in version control. There are different strategies depending on the size of the project, the number of team members, and the desired workflow. Here are some common branching strategies used in GitHub:
+
+main or master branch:: This is default branch and whenever we created the empty Repository by defauly main or master branche is created automatically.
+main or master branch always stable and live code 
+
+feature branch:: It could be a new feature, an improvement of existing features, bug fixes, or any other changes. A feature branch is a type of branch in Git typically used to develop new features for the software.feature branch will created from main or master OR feature branch created from latest release branch always based on the release cycle
+
+formate:: feature/YYYY.MM.DD
+ feature/2025.08.05
+
+release branch:: Based on the release we have created release branch accourdingly and starts the next release cycle.
+always release branch created from master only and master have stable and live code and post release we shold merged code changes to master branch only
+
+release/2025.08.10
+
+hotfix branch:: always created from main or master branch only for production fixes.once production fix done we should merged directly to main or master branch only.
+
+always created this hotfix branch for production issues fixes
+
+bugfix:: this branch is created from release branch to fix the LLE(lower level environemnt)/Pre-Prod/UAT/Non-Prod issues and once LLE issues fixed ,we should pushed their changes to release branch only.
+
+cloning references::
+
+![image](https://github.com/user-attachments/assets/87f6ed4a-095b-4faa-854a-7fcdc019f31f)
+
+
+
+Create New Branch::
+=================
+
+Click Branches
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a795a257-a126-449e-9dba-22729bec940d" />
+
+Find New Branch at Right side and click
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2b5fbd36-953e-45e0-baef-450c680b7e5f" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17de84ed-cc93-4b01-8f32-5a1ff0ddf3ee" />
+
+New feature Branch Formate----> feature/YYYY.MM.DD
+
+feature/2025.08.05
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/60902962-ec6c-4c9f-90eb-04c9835a64d0" />
+
+click create New Branch 
+
+Branch Created Successfully
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b6821e5f-3b54-406d-a4ae-7f2fd885974f" />
+
+
+
+Branches:
+==============
+
+
+main (or master): Always production-ready.
+
+feature/*: Used for new features.
+
+release/*: Prepares for a new production release.
+
+main or master branch:: 
+=====================
+
+This is default branch and whenever we created the empty Repository by defauly main or master branche is created automatically. main or master branch always stable and live code
+
+feature branch:: 
+===============
+
+It could be a new feature, an improvement of existing features, bug fixes, or any other changes. A feature branch is a type of branch in Git typically used to develop new features for the software.feature branch will created from main or master OR feature branch created from latest release branch always based on the release cycle
+
+formate:: 
+=============
+
+feature/YYYY.MM.DD feature/2025.06.22
+
+release branch:: 
+====================
+
+Based on the release we have created release branch accourdingly and starts the next release cycle. always release branch created from master only and master have stable and live code and post release we shold merged code changes to master branch only
+
+release/2025.07.20
+
+hotfix branch:: 
+==================
+
+always created from main or master branch only for production fixes.once production fix done we should merged directly to main or master branch only.
+
+always created this hotfix branch for production issues fixes
+
+
+Raise PR (Pull Request) :: 
+=================================
+
+Merge the code from one branch to another branch that is called pull request
+
+below are the steps to raise PR::
+
+Go to -->Pull requests and click
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/baf5a7d7-f69d-44e8-87ad-ae67d082353f" />
+
+
+Click New Pull Request::
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/68456b4f-bd40-41b6-a238-25439f97dff4" />
+
+
+please select base & compare branches so here base branch is release/2025.08.10 and compare branch is feature/2025.08.05
+
+i'm going to merge code changes from feature branch to release branch 
+
+
+click create pull request
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6b7a39c0-7a34-45c9-812b-ca518d1a441a" />
+
+
+![image](https://github.com/user-attachments/assets/08a98671-c810-46fc-9024-17bae7538a61)
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e36c29e8-3c38-4579-8073-58ac6304e6fd" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dc582d4a-e173-4648-a76c-3aebd7869b5b" />
+
+
+click merge request
+
+![image](https://github.com/user-attachments/assets/44a4b84e-1aef-4b19-a93e-64e48b362b29)
+
+ Open
+srinfotechbatch3 wants to merge 1 commit into main from feature/2025.08.05
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a70ee7d-fc8e-45aa-bb28-6a445a223cf0" />
+
+
+confirm merge
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b6e9ab2f-30cc-4fe2-9754-03f6f6262786" />
+
+
+
+Lab Practice::
+=================
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6
+$ git clone git@github.com:srinfotechbatch5/iphoneMobiles.git
+Cloning into 'iphoneMobiles'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6
+$ cd iphoneMobiles/
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/iphoneMobiles (main)
+$ git checkout feature/2026.01.25
+branch 'feature/2026.01.25' set up to track 'origin/feature/2026.01.25'.
+Switched to a new branch 'feature/2026.01.25'
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/iphoneMobiles (feature/2026.01.25)
+$ git status
+On branch feature/2026.01.25
+Your branch is up to date with 'origin/feature/2026.01.25'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Iphonemobile.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/iphoneMobiles (feature/2026.01.25)
+$ git add --all
+warning: in the working copy of 'Iphonemobile.java', LF will be replaced by CRLF the next time Git touches it
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/iphoneMobiles (feature/2026.01.25)
+$ git status
+On branch feature/2026.01.25
+Your branch is up to date with 'origin/feature/2026.01.25'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Iphonemobile.java
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/iphoneMobiles (feature/2026.01.25)
+$ git commit -m "impletmented iphonemobiles feature"
+[feature/2026.01.25 50bc140] impletmented iphonemobiles feature
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Iphonemobile.java
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/iphoneMobiles (feature/2026.01.25)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 406 bytes | 406.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:srinfotechbatch5/iphoneMobiles.git
+   b8c3cf4..50bc140  feature/2026.01.25 -> feature/2026.01.25
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/iphoneMobiles (feature/2026.01.25)
+$
+
+
+Merged
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b8dfb8ae-1a1c-4245-a4ee-944db6bbd07e" />
+
+
+
