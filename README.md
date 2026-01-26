@@ -466,15 +466,6 @@ always release branch created from master only and master have stable and live c
 
 release/2025.08.10
 
-hotfix branch:: always created from main or master branch only for production fixes.once production fix done we should merged directly to main or master branch only.
-
-always created this hotfix branch for production issues fixes
-
-bugfix:: this branch is created from release branch to fix the LLE(lower level environemnt)/Pre-Prod/UAT/Non-Prod issues and once LLE issues fixed ,we should pushed their changes to release branch only.
-
-cloning references::
-
-![image](https://github.com/user-attachments/assets/87f6ed4a-095b-4faa-854a-7fcdc019f31f)
 
 
 
@@ -540,12 +531,6 @@ Based on the release we have created release branch accourdingly and starts the 
 
 release/2025.07.20
 
-hotfix branch:: 
-==================
-
-always created from main or master branch only for production fixes.once production fix done we should merged directly to main or master branch only.
-
-always created this hotfix branch for production issues fixes
 
 
 Raise PR (Pull Request) :: 
