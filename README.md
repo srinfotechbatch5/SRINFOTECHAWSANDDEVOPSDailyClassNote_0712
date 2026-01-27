@@ -655,3 +655,254 @@ Merged
 
 
 
+26/01/2025::
+==============
+
+
+Avoide conflicts in RealTime Scenarious::
+==============================================
+
+
+If multiple developers OR DevOps Engineers are working on same Project/MOdules, if they tried to commits thier code changes to Repository, it will faces the conflicts issues and how to resolved those conflicts issues in real time projects
+
+
+<img width="1553" height="662" alt="image" src="https://github.com/user-attachments/assets/ef697106-96aa-43c5-8152-3d0c765abf4f" />
+
+
+Please create developer1,developer2,developer3 directories in your local machine and clone the project code separately 
+
+![image](https://github.com/user-attachments/assets/a0345422-a025-4c3a-84c5-737b98244a6a)
+
+
+![image](https://github.com/user-attachments/assets/3296003f-c8c7-42c8-bdca-3270576aaa57)
+
+
+![image](https://github.com/user-attachments/assets/7e786310-5092-4975-9eb9-7b18801353d8)
+
+Editor steps for Resolved the conflicts::
+
+resolved conflicts::
+
+>git pull
+
+opend the editor
+
+1.presh the i from your keyboard
+
+2.esc
+
+3.swift+:
+
+4.wq
+
+5.enter
+
+
+Developer1 Activity::
+=====================
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1
+$ git clone git@github.com:srinfotechbatch5/onlinebookstore.git
+Cloning into 'onlinebookstore'...
+remote: Enumerating objects: 1182, done.
+remote: Total 1182 (delta 0), reused 0 (delta 0), pack-reused 1182 (from 1)
+Receiving objects: 100% (1182/1182), 4.63 MiB | 2.34 MiB/s, done.
+Resolving deltas: 100% (572/572), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1
+$ cd onlinebookstore/
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1/onlinebookstore (master)
+$ git checkout feature/2026.01.26
+branch 'feature/2026.01.26' set up to track 'origin/feature/2026.01.26'.
+Switched to a new branch 'feature/2026.01.26'
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1/onlinebookstore (feature/2026.01.26)
+$ git status
+On branch feature/2026.01.26
+Your branch is up to date with 'origin/feature/2026.01.26'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Jenkinsfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1/onlinebookstore (feature/2026.01.26)
+$ git add --all
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1/onlinebookstore (feature/2026.01.26)
+$ git status
+On branch feature/2026.01.26
+Your branch is up to date with 'origin/feature/2026.01.26'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Jenkinsfile
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1/onlinebookstore (feature/2026.01.26)
+$ git commit -m "i have updated jenkinsfile"
+[feature/2026.01.26 6ea26d6] i have updated jenkinsfile
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1/onlinebookstore (feature/2026.01.26)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:srinfotechbatch5/onlinebookstore.git
+   58c7929..6ea26d6  feature/2026.01.26 -> feature/2026.01.26
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer1/onlinebookstore (feature/2026.01.26)
+$
+
+
+Developer2 Activity::
+=====================
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer2
+$ git clone git@github.com:srinfotechbatch5/onlinebookstore.git
+Cloning into 'onlinebookstore'...
+remote: Enumerating objects: 1182, done.
+Rremote: Total 1182 (delta 0), reused 0 (delta 0), pack-reused 1182 (from 1)
+Receiving objects: 100% (1182/1182), 4.63 MiB | 2.36 MiB/s, done.
+Resolving deltas: 100% (567/567), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer2
+$ cd onlinebookstore/
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer2/onlinebookstore (master)
+$ git checkout feature/2026.01.26
+branch 'feature/2026.01.26' set up to track 'origin/feature/2026.01.26'.
+Switched to a new branch 'feature/2026.01.26'
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer2/onlinebookstore (feature/2026.01.26)
+$ git status
+On branch feature/2026.01.26
+Your branch is up to date with 'origin/feature/2026.01.26'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Jenkinsfile
+
+Merge branch 'feature/2026.01.26' of github.com:srinfotechbatch5/onlinebookstore into feature/2026.01.26
+
+
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 288 bytes | 10.00 KiB/s, done.
+From github.com:srinfotechbatch5/onlinebookstore
+   58c7929..6ea26d6  feature/2026.01.26 -> origin/feature/2026.01.26
+Auto-merging Jenkinsfile
+Merge made by the 'ort' strategy.
+ Jenkinsfile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer2/onlinebookstore (feature/2026.01.26)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 677 bytes | 225.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:srinfotechbatch5/onlinebookstore.git
+   6ea26d6..4e17117  feature/2026.01.26 -> feature/2026.01.26
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer2/onlinebookstore (feature/2026.01.26)
+$
+
+
+Developer3 Activity::
+=====================
+
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer3
+$ git clone git@github.com:srinfotechbatch5/onlinebookstore.git
+Cloning into 'onlinebookstore'...
+remote: Enumerating objects: 1182, done.
+remote: Total 1182 (delta 0), reused 0 (delta 0), pack-reused 1182 (from 1)
+Receiving objects: 100% (1182/1182), 4.63 MiB | 1.89 MiB/s, done.
+Resolving deltas: 100% (572/572), done.
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer3
+$ cd onlinebookstore/
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer3/onlinebookstore (master)
+$ git checkout feature/2026.01.26
+branch 'feature/2026.01.26' set up to track 'origin/feature/2026.01.26'.
+Merge branch 'feature/2026.01.26' of github.com:srinfotechbatch5/onlinebookstore into feature/2026.01.26
+
+
+
+
+Auto-merging Jenkinsfile
+Merge made by the 'ort' strategy.
+ Jenkinsfile | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer3/onlinebookstore (feature/2026.01.26)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 685 bytes | 342.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:srinfotechbatch5/onlinebookstore.git
+   4e17117..ad7d248  feature/2026.01.26 -> feature/2026.01.26
+
+HP@DESKTOP-3GU6R56 MINGW64 ~/Documents/Demo Batch6/Developer3/onlinebookstore (feature/2026.01.26)
+$
+
+
+Git All the Commands::
+==========================
+
+Git commands::
+==============
+1.git clone git@github.com:srinfotechbatch5/onlinebookstore.git
+
+2.cd SRINfotechDemo
+
+3.git status
+
+4.git add --all
+
+5.git status
+
+6.git commit -m "i have added hellow world project files"
+
+7.git push   ---->from local changes pushed to remote
+
+8.git pull   --->remote to local
+
+9.git checkout <branchname>
+
+   git checkout feature/2025.06.22
+   
+10.git pull  --->every devlioper beforre pushing their changes we should make sure git pull the every time   
+  
+
+clone      Clone a repository into a new directory
+
+add        Add files
+
+status     Show the working tree status
+
+commit     Record changes to the repository
+
+ pull       Fetch from and integrate with another repository or a local branch
+ 
+ push       Update remote refs along with associated objects
