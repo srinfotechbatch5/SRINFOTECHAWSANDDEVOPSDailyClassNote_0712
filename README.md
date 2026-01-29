@@ -1184,6 +1184,8 @@ click below Jenkins version
 
 Download Jenkins 2.516.1 LTS for:
 
+https://get.jenkins.io/war-stable/
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ad241e7-3ae0-4f30-8ef2-33af47891c5b" />
 
 
